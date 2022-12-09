@@ -1,0 +1,36 @@
+:root {
+    font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', sans-serif;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html, body {
+    overscroll-behavior-y: contain;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 540px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: calc( 100vw - 4rem );
+    max-width: calc( 100vh - 4rem );
+}
+
+button:active {
+    filter: brightness(.85);
+}
